@@ -1,7 +1,14 @@
 let db = require('./config/database').db;
 let express = require('express');
-let port = 5000;
+let port = 7000;
 let app = express();
+const path = require('path');
+const { handlebars } = require('hbs');
+const {engine} = require('express-handlebars');
+app.engine('handlebars', engine());
+app.set('view engine', 'handlebars');
+app.set('views', './view');
+app.use(express.static(__dirname + "/public"));
 const manage = require('./routes/manage');
 const index = require('./routes/index');
 const login = require('./routes/login');
@@ -9,14 +16,7 @@ const adduser = require("./routes/adduser");
 const deleteuser = require("./routes/delete");
 const department = require("./routes/department");
 const salary = require("./routes/salary");
-const path = require('path');
-const hbs = require('handlebars');
-const { handlebars } = require('hbs');
-const {engine} = require('express-handlebars');
-app.engine('handlebars', engine());
-app.set('view engine', 'handlebars');
-app.set('views', './view');
-app.use(express.static(__dirname + "/public"));
+
 
 app.use("/",index);
 app.use("/welcome",login);
