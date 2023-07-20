@@ -1,12 +1,15 @@
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
-body{
+
+body {
     background-color: #C4D7E0;
-    
+    height: 100%;
+
 }
+
 .Re {
     color: rgb(97, 93, 93);
     background-color: rgb(214, 216, 219);
@@ -24,7 +27,7 @@ body{
     text-align: center;
 }
 
-.getinfo{
+.getinfo {
     margin-left: 19px;
 }
 
@@ -39,71 +42,73 @@ body{
     border: 1px solid lightgray;
     border-radius: 2px;
     background-color: #6E85B7;
-    color: #fff;    
+    color: #fff;
 }
 
-.info{
+.info {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-left: 250px;
     width: 890px;
-    font-size: 17px; 
-    padding-left: 30px; 
+    font-size: 17px;
+    padding-left: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
-    border: 1px solid lightgray; 
-    border-radius: 2px;   
-    background-color: #6E85B7;  
-    color: #fff;       
+    border: 1px solid lightgray;
+    border-radius: 2px;
+    background-color: #6E85B7;
+    color: #fff;
 }
 
-.Fname{
-    margin-bottom: 10px;
-}
-.dep{
+.Fname {
     margin-bottom: 10px;
 }
 
-#fn{
+.dep {
+    margin-bottom: 10px;
+}
+
+#fn {
     width: 850px;
     height: 30px;
     margin-bottom: 20px;
     border: 1px solid lightgray;
 }
 
-#ln{
+#ln {
     width: 850px;
     height: 30px;
     margin-bottom: 20px;
     border: 1px solid lightgray;
 }
 
-#add{
+#add {
     width: 850px;
     height: 30px;
     margin-bottom: 20px;
     border: 1px solid lightgray;
 }
 
-#mn{
+#mn {
     width: 850px;
     height: 30px;
     margin-bottom: 20px;
     border: 1px solid lightgray;
 }
 
-#dept{
+#dept {
     width: 850px;
     height: 35px;
     margin-bottom: 20px;
-    border: 1px solid lightgray;    
+    border: 1px solid lightgray;
 }
 
-.info :focus{
+.info :focus {
     outline: none;
     border-color: #79b9ee;
     box-shadow: 0 0 10px #79b9ee;
 }
-button{
+
+button {
     width: 130px;
     height: 30px;
     margin-top: 30px;
@@ -115,7 +120,7 @@ button{
     cursor: pointer;
 }
 
-h3{
+h3 {
     width: 200px;
     height: 30px;
     margin-top: 25px;
@@ -125,4 +130,5 @@ h3{
     background-color: #6E85B7;
     text-align: center;
     color: #fff;
+    margin-bottom: 50px;
 }

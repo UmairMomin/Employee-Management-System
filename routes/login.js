@@ -5,11 +5,11 @@ router.get("/",(req,res)=>{
     const {email,password} = req.query;
     if (email == "admin@admin.com" && password == "admin")
     {
-        res.render("welcome")    
+        res.render("wel", { pageTitle: 'Welcome'});
     } 
     else 
     {   
-        res.render("login",{msg: true})
+        res.render("login",{ pageTitle: 'Login', msg: true})
     }
 });
 module.exports = router;

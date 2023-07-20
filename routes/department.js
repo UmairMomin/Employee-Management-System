@@ -7,7 +7,7 @@ router.get("/",(req,res)=>{
     db.query(qry,(err,rows)=>{
         if(err) throw err
         else
-        res.render("department", { rows });
+        res.render("department", { pageTitle: 'Department', data: rows });
     });      
 });
 
