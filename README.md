@@ -12,10 +12,10 @@ Welcome to the Employee Management System repository! This project is a comprehe
 
 To get started with the Employee Management System, follow these steps:
 
-1. **Clone the Repository:**
+1. **Clone the Repository:**<br>
 git clone https://github.com/UmairMomin/Employee-Management-System.git
 
-2. **Install Dependencies:**
+2. **Install Dependencies:** <br>
 cd Employee-Management-System
 npm install
 
