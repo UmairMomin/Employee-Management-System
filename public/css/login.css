@@ -1,29 +1,33 @@
 /* Google Font Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins" , sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-body{
+
+body {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #7d2ae8;
   padding: 30px;
-}   
-.container{
+}
+
+.container {
   position: relative;
   max-width: 850px;
   width: 100%;
   background: #fff;
   padding: 40px 30px;
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   perspective: 2700px;
 }
-.container .cover{
+
+.container .cover {
   position: absolute;
   top: 0;
   left: 50%;
@@ -34,14 +38,16 @@ body{
   transform-origin: left;
   transform-style: preserve-3d;
 }
- .container .cover .front{
+
+.container .cover .front {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
 }
-.container .cover::before{
+
+.container .cover::before {
   content: '';
   position: absolute;
   height: 100%;
@@ -50,19 +56,22 @@ body{
   opacity: 0.5;
   z-index: 12;
 }
-.container .cover::after{
+
+.container .cover::after {
   opacity: 0.3;
   transform: rotateY(180deg);
   backface-visibility: hidden;
 }
-.container .cover img{
+
+.container .cover img {
   position: absolute;
   height: 100%;
   width: 100%;
   object-fit: cover;
   z-index: 10;
 }
-.container .cover .text{
+
+.container .cover .text {
   position: absolute;
   z-index: 130;
   height: 100%;
@@ -72,37 +81,44 @@ body{
   align-items: center;
   justify-content: center;
 }
+
 .cover .text .text-1,
-.cover .text .text-2{
+.cover .text .text-2 {
   font-size: 26px;
   font-weight: 600;
   color: #fff;
   text-align: center;
 }
-.cover .text .text-2{
+
+.cover .text .text-2 {
   font-size: 15px;
   font-weight: 500;
 }
-.container .forms{
+
+.container .forms {
   height: 100%;
   width: 100%;
   background: #fff;
 }
-.container .form-content{
+
+.container .form-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.form-content .login-form{
+
+.form-content .login-form {
   width: calc(100% / 2 - 25px);
 }
-.forms .form-content .title{
+
+.forms .form-content .title {
   position: relative;
   font-size: 24px;
   font-weight: 500;
   color: #333;
 }
-.forms .form-content .title:before{ 
+
+.forms .form-content .title:before {
   content: '';
   position: absolute;
   left: 0;
@@ -111,10 +127,12 @@ body{
   width: 25px;
   background: #7d2ae8;
 }
-.forms .form-content .input-boxes{
+
+.forms .form-content .input-boxes {
   margin-top: 30px;
 }
-.forms .form-content .input-box{
+
+.forms .form-content .input-box {
   display: flex;
   align-items: center;
   height: 50px;
@@ -122,7 +140,8 @@ body{
   margin: 10px 0;
   position: relative;
 }
-.form-content .input-box input{
+
+.form-content .input-box input {
   height: 100%;
   width: 100%;
   outline: none;
@@ -130,10 +149,11 @@ body{
   padding: 0 30px;
   font-size: 16px;
   font-weight: 500;
-  border-bottom: 2px solid rgba(0,0,0,0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
-.form-content .input-box .input{
+
+.form-content .input-box .input {
   height: 100%;
   width: 100%;
   outline: none;
@@ -141,19 +161,22 @@ body{
   padding: 0 30px;
   font-size: 16px;
   font-weight: 500;
-  border-bottom: 2px solid rgba(0,0,0,0.2);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
 }
-.form-content .input-box i{
+
+.form-content .input-box i {
   position: absolute;
   color: #7d2ae8;
   font-size: 17px;
 }
-.forms .form-content .button{
+
+.forms .form-content .button {
   color: #fff;
   margin-top: 40px;
 }
-.forms .form-content .button button{
+
+.forms .form-content .button button {
   color: #fff;
   background: #7d2ae8;
   border-radius: 6px;
@@ -161,13 +184,16 @@ body{
   cursor: pointer;
   transition: all 0.4s ease;
 }
-.forms .form-content .button .input:hover{
+
+.forms .form-content .button .input:hover {
   background: #5b13b9;
 }
+
 @media (max-width: 730px) {
-  .container .cover{
+  .container .cover {
     display: none;
   }
+
   .form-content .login-form {
     width: 100%;
   }

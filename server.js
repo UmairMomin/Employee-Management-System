@@ -1,6 +1,6 @@
 let db = require('./config/database').db;
 let express = require('express');
-let port = 7000;
+let port = 3000;
 let app = express();
 const path = require('path');
 app.set('view engine', 'ejs');
